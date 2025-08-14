@@ -19,5 +19,4 @@ Route::middleware([
     Route::resource('tasks', TaskController::class)->except([
         'create', 'edit', 'show'
     ]);
-
 });
