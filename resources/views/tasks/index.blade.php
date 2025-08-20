@@ -38,7 +38,8 @@
                                         <input type="hidden" name="completed" value="{{ $task->completed ? '0' : '1' }}">
                                         <button type="submit" class="focus:outline-none">
                                             <div class="flex items-center h-5">
-                                                <input type="checkbox" {{ $task->completed ? 'checked' : '' }} class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out rounded">
+                                                <input type="checkbox" {{ $task->completed ? 'checked' : '' }}
+                                                class="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out rounded">
                                             </div>
                                         </button>
                                     </form>
