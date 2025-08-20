@@ -29,7 +29,7 @@ class TaskController extends Controller
 
     public function update(UpdateTaskRequest $request, Task $task)
     {
-        $this->authorize('update', $task);
+
         $task->update($request->validated());
 
         return redirect()->route('tasks.index');
